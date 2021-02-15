@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display:grid;
+  place-items: center;
+  font-size: 10px;
+  background-color: #ff9999;
+}
+
+.container{
+  width: 80%;
+  max-width: 1000px;
+  height: 100vh;
+
+}
+
+h1{
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto;
+  color: white
+}
+
+.slider{
+  max-width: 4000px;
+  display: grid;
+  place-items: center;
+}
+
+.sliderContainer{
+  width:1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+img{
+width: 200px;
+height: 200px;
+object-fit:cover
+}
