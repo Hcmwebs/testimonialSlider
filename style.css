@@ -11,14 +11,14 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  background-color: #ffa8b6;
+
 }
 
 .container{
   width: 100%;
   max-width: 1000px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #ffa8b6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,18 +31,18 @@ body{
   font-size: 4.0rem;
   font-weight: 400;
   text-align: center;
-  padding-top: 80px;
+  margin-bottom: 50px;
   color: #fff;
 }
 
 .slider{
   width: 100%;
-  height: 100%;
-  /* overflow: hidden; */
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .slides{
-  max-width:4000px;
+  width:4000px;
   height:100%;
   display: flex;
   justify-content: center;
@@ -51,8 +51,9 @@ body{
 }
 
 .card{
-  width:1000px;
-  height: 600px;
+  width:100%;
+  max-width:1000px;
+  height: 400px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -82,8 +83,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform:translateX(2.5rem);
-  padding:45px;
+  transform:translateX(-1.5rem);
+  padding:40px;
   border-radius: 1rem;
   color: #fff;
   background-color:darkslateblue;
@@ -92,14 +93,32 @@ body{
 
 .card__body h3{
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .card__body p{
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 0.5rem;
+}
+
+.card__sliderTracker{
+  margin-top: 50px;
+
+}
+.indicator{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin:0 2px;
+  outline: none;
+  border: none;
+  color: rgba(255, 255,255, 0.4)
+}
+.active{
+  width: 45px;
 }
