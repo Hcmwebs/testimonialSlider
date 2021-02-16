@@ -11,6 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 10px;
+  background-color: #ffa8b6;
 
 }
 
@@ -18,7 +19,7 @@ body{
   width: 100%;
   max-width: 1000px;
   height: 100vh;
-  background-color: #ffa8b6;
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +38,6 @@ body{
 
 .slider{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
@@ -47,7 +47,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .card{
@@ -58,8 +58,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
-  border-right: 1px solid #000;
+  /* background-color: aqua;
+  border-right: 1px solid #000; */
 }
 
 
@@ -106,7 +106,8 @@ body{
 }
 
 .card__sliderTracker{
-  margin-top: 50px;
+  margin:30px auto;
+  padding: 30px;
 
 }
 .indicator{
@@ -117,7 +118,12 @@ body{
   margin:0 2px;
   outline: none;
   border: none;
-  color: rgba(255, 255,255, 0.4)
+  background-color: rgba(255, 255,255, 0.7);
+  transition:all .5s ease-in-out;
+
+}
+.indicator:hover{
+background-color: rgba(255,255, 255, 0.9)
 }
 .active{
   width: 45px;
